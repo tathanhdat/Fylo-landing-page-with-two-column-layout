@@ -1,0 +1,186 @@
+/* ---- Header ---- */
+
+header {
+    padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    min-width: 250px;
+}
+
+.navbar li {
+    font-size: 1.4rem;
+    margin: 0rem 2rem;
+}
+
+/* ---- Section ---- */
+section {
+    display: flex;
+    text-align: left;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 9rem;
+}
+
+.content {
+    order: 1;
+    max-width: 35%;
+}
+
+.section-1 .content__title {
+    font-size: 2.5rem;
+    line-height: 1.5;
+}
+
+.section-1 .content__para {
+    font-size: 1.2rem;
+    padding: 0;
+}
+
+.showcase {
+    order: 2;
+    max-width: 35%;
+}
+
+.submit {
+    order: 3;
+    flex-direction: row;
+    position: relative;
+}
+
+.submit input[type='email'] {
+    width: 60%;
+    margin-right: 1rem;
+    height: 50px;
+}
+
+.submit input[type='button'] {
+    width: 40%;
+    height: 50px;
+    font-size: 0.9rem;
+}
+
+.warn-msg {
+    position: absolute;
+    display: none;
+    left: 0;
+    top: 75%;
+}
+
+.section-2::before {
+    background: url(../images/bg-curve-desktop.svg);
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+    top: -100px;
+    left: 0;
+}
+
+.section-2 .content__title {
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.section-2 .content__para {
+    font-size: 1.1rem;
+}
+
+.review {
+    width: 60%;
+}
+
+.review__text {
+    font-size: 1rem;
+}
+
+.user__avatar {
+    width: 45px;
+}
+
+.user__info {
+    font-size: 0.9rem;
+}
+
+.user__info span {
+    font-size: 0.8rem;
+}
+
+.section-3 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.section-3 .content__title {
+    font-size: 2rem;
+}
+
+.section-3 .content__para {
+    font-size: 1.1rem;
+    width: 90%;
+}
+
+.section-3 .submit {
+    flex-direction: column;
+    width: 30%;
+}
+
+.section-3 input[type='email'] {
+    width: 100%;
+}
+
+.section-3 .submit input[type='button'] {
+    margin: 0.5rem 0;
+    width: 10%;
+}
+
+.section-3 .warn-msg {
+    left: 0;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 10rem 2rem 5rem;
+}
+footer > * {
+    flex: 1;
+}
+
+.more-info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.more-info ul {
+    margin: 0;
+    flex: 1;
+}
+
+.social-network {
+    padding-top: 2%;
+    padding-right: 10%;
+    align-self: flex-start;
+    font-size: 2rem;
+}
+
+.social-network li {
+    margin: 1rem 1.5rem;
+}
+
+.attribution {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    left: 40%;
+    right: 40%;
+}

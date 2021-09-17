@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+:root {
+    /* primary */
+    --very-dark-blue: hsl(243, 87%, 12%);
+    --desaturated-blue: hsl(238, 22%, 44%);
+    /* accent */
+    --bright-blue: hsl(224, 93%, 58%);
+    --moderate-cyan: hsl(170, 45%, 43%);
+    /* neutral */
+    --light-grayish-blue: hsl(240, 75%, 98%);
+    --light-gray: hsl(0, 0%, 75%);
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* ---- Header ---- */
+
+header {
+    min-height: 150px;
+    font-family: 'Raleway', sans-serif;
+    padding: 2rem;
+}
+
+.logo {
+    float: left;
+    max-width: 100px;
+}
+
+.navbar {
+    float: right;
+    color: var(--very-dark-blue);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    font-size: 1rem;
+}
+
+.navbar li {
+    margin: 0.5rem 0.5rem 0 0.5rem;
+}
+
+/* ---- Section ---- */
+section {
+    text-align: center;
+    padding: 2rem 2rem 3rem;
+    color: var(--very-dark-blue);
+}
+
+.showcase {
+    max-width: 100%;
+    margin-bottom: 2rem;
+}
+
+.content__title {
+    font-family: 'Raleway', sans-serif;
+}
+
+.content__para {
+    color: var(--desaturated-blue);
+}
+
+.submit {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.submit input {
+    font-family: 'Raleway', sans-serif;
+}
+
+.submit input[type='email'] {
+    order: 1;
+    font-weight: 700;
+    height: 45px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--very-dark-blue);
+    border-radius: 5px;
+    color: var(--light-gray);
+}
+
+.submit input[type='email']:focus-visible {
+    outline-style: none;
+}
+
+.submit input[type='button'] {
+    order: 3;
+    height: 45px;
+    text-align: center;
+    border: transparent;
+    border-radius: 5px;
+    background-color: var(--bright-blue);
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    box-shadow: 2px 2px 6px var(--light-gray);
+    cursor: pointer;
+}
+
+.submit input[type='button']:hover {
+    background-color: hsl(224, 93%, 70%);
+}
+
+.warn-msg {
+    order: 2;
+    position: relative;
+    color: hsla(0, 100%, 50%, 0.7);
+    top: -15px;
+    left: 0;
+    max-width: 180px;
+    display: none;
+}
+
+input[type='button']:active ~ .warn-msg {
+    display: block;
+}
+
+input[type='button']:active ~ input[type='email'] {
+    border-color: hsla(0, 100%, 50%, 0.5);
+}
+
+/* Section 1 */
+.section-1 {
+    margin-bottom: 10rem;
+}
+
+.section-1 .content__title {
+    font-size: 1.6rem;
+    margin: 1rem 0 1.5rem;
+}
+
+.section-1 .content__para {
+    padding: 0 1rem 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+/* Section 2 */
+.section-2 {
+    background-color: var(--light-grayish-blue);
+    margin-top: 4rem;
+    position: relative;
+}
+
+.section-2::before {
+    content: '';
+    background: url(../images/bg-curve-mobile.svg) center center no-repeat;
+    background-size: cover;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: -60px;
+    left: 0;
+}
+
+.section-2 .content__title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 3rem 0 1.5rem;
+}
+
+.section-2 .content__para {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.section-2 .content__para p {
+    margin-bottom: 1rem;
+}
+
+/* See how Fylo works */
+.content__link {
+    margin: 2rem 0;
+    cursor: pointer;
+}
+
+.content__link .arrow-icon {
+    display: inline-block;
+    background-image: url(../images/icon-arrow.svg);
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    vertical-align: bottom;
+}
+
+.content__link a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: var(--moderate-cyan);
+    border-bottom: 2px solid var(--moderate-cyan);
+    padding-bottom: 5px;
+}
+
+.content__link a:hover {
+    color: hsl(170, 45%, 70%);
+    border-color: hsl(170, 45%, 70%);
+}
+
+.content__link a:hover > .arrow-icon {
+    background-image: url(../images/icon-arrow-hover.svg);
+}
+
+/* User review */
+.review {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem 1rem 2rem 2.5rem;
+    text-align: left;
+    box-shadow: 2px 2px 6px var(--light-gray);
+}
+
+.review__quote {
+    width: 20px;
+}
+
+.review__text {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user__avatar {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 0.7rem;
+}
+
+.user__info {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.user__info span {
+    display: block;
+    font-size: 0.6rem;
+    font-weight: 400;
+}
+
+/* Section 3 */
+.section-3 {
+    background-color: var(--desaturated-blue);
+    color: white;
+    padding: 3rem 2.5rem 4rem;
+}
+
+.section-3 .content__title {
+    font-size: 1.3rem;
+    margin-bottom: 1.3rem;
+}
+
+.section-3 .content__para {
+    color: white;
+}
+
+.section-3 input {
+    min-width: 250px;
+    margin: 0 auto;
+}
+
+.section-3 input[type='email'] {
+    border-color: transparent;
+    margin-bottom: 0.5rem;
+}
+
+.section-3 input[type='button'] {
+    box-shadow: 1px 1px 5px hsla(243, 87%, 12%, 0.4);
+}
+
+.section-3 .warn-msg {
+    position: relative;
+    color: white;
+    top: -10px;
+    left: 20px;
+    max-width: 180px;
+    display: none;
+}
+
+/* ---- Footer ---- */
+
+footer {
+    background-color: var(--very-dark-blue);
+    color: white;
+    padding: 4rem 2rem 0;
+}
+
+/* Contact */
+.contact {
+    margin-bottom: 4rem;
+}
+
+.footer-logo {
+    margin-bottom: 2rem;
+}
+
+.contact__info {
+    display: flex;
+    margin-bottom: 1.2rem;
+}
+
+.contact__info img {
+    margin-right: 1rem;
+    width: 25px;
+}
+
+/* More Info */
+
+.more-info ul {
+    list-style: none;
+    margin-bottom: 2.5rem;
+    font-size: 1.1rem;
+}
+
+.more-info li {
+    margin-bottom: 0.9rem;
+    cursor: pointer;
+}
+
+.more-info li:hover {
+    color: hsl(224, 93%, 70%);
+}
+
+/* Social Network */
+.social-network {
+    display: flex;
+    list-style: none;
+    font-size: 1.6rem;
+    justify-content: center;
+}
+
+.social-network li {
+    margin: 1rem 0.6rem;
+    cursor: pointer;
+}
+
+.social-network li:hover {
+    color: hsl(224, 93%, 70%);
+}
+
+/* Attribution */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
