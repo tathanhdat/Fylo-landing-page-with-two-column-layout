@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 
--   [Live site URL here](https://your-live-site-url.com)
+-   [Live site URL here](https://tathanhdat.github.io/Fylo-landing-page-with-two-column-layout/)
 
 ## My process
 
